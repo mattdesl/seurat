@@ -1,9 +1,9 @@
 var Rectangle = require('minimath').Rectangle;
-var World = require('knit').World;
+var World = require('knit.js').World;
 
 
-var Constraint = require('knit').Constraint;
-var PointMass = require('knit').PointMass;
+var Constraint = require('knit.js').Constraint;
+var PointMass = require('knit.js').PointMass;
 
 var rand = require('minimath').random;
 var dist = require('minimath').distance;

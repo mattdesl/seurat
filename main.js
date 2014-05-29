@@ -85,23 +85,21 @@ domready(function() {
         cloth.stiffness = 0.851;
         cloth.mass = 1.0;
         cloth.chromaKey = true;
-
-
         
 
 
         function start() {
+            ///eughh ugly
+            reset();
+            window.findAverage();
             reset();
 
             //first render with lenna        
             // cloth.render(img);
 
             setTimeout(update, 500);
-
+            
             loadVideo();
-
-            ///eughh ugly
-            window.findAverage();
         }
 
         function loadVideo() {

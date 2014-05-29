@@ -81,10 +81,10 @@ domready(function() {
         cloth.sizeLow = -4;
         cloth.sizeHigh = 4;
         cloth.randomizeSize = false;
-        cloth.usePins = false;
-        cloth.stiffness = 0.05;
+        cloth.usePins = true;
+        cloth.stiffness = 0.851;
         cloth.mass = 1.0;
-
+        cloth.chromaKey = true;
 
 
         
@@ -116,12 +116,14 @@ domready(function() {
 
                 video.addEventListener("play", function() {
                     reset();
+                    window.findAverage();
                 }, true);
 
                 console.log("GETTING VIDEO");
                 navigator.getUserMedia({video: true}, function(stream) {
                     video.src = window.URL.createObjectURL(stream);
                     hasVideo = true;
+
 
                 }, function() {
                     //err handling...

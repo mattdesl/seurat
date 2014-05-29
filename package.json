@@ -1,0 +1,33 @@
+{
+  "name": "seurat",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "dat-gui": "~0.5.0",
+    "domready": "~0.2.13",
+    "imagebuffer": "~3.0.1",
+    "kami": "~0.2.1",
+    "klasse": "~1.0.6",
+    "knit.js": "~0.0.1",
+    "minimath": "~0.0.0",
+    "raf.js": "~0.0.3",
+    "vecmath": "~0.0.3",
+    "minivec": "~0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify main.js -o release/js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattdesl/seurat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattdesl/seurat/issues"
+  },
+  "homepage": "https://github.com/mattdesl/seurat"
+}
